@@ -1,0 +1,21 @@
+┌──────────────────┐        ┌─────────────────────┐        ┌──────────────────┐
+│  Client Apps     │  REST  │  API Gateway        │  gRPC  │  Internal Services│
+│  (Web + CLI)     │ ─────▶ │  FastAPI / Envoy    │ ─────▶ │  (Python / Node) │
+└──────────────────┘        └────────┬────────────┘        └────────┬─────────┘
+                                      │                             │
+                                      ▼                             ▼
+                             ┌─────────────────┐            ┌────────────────┐
+                             │  Orchestrator   │            │  LLM Workers   │
+                             │  (Celery +      │  AMQP/RPC  │  (OpenAI,      │
+                             │   Rayon)        │ ◀────────▶ │   vLLM)        │
+                             └────────┬────────┘            └──────┬─────────┘
+                                      │                             │
+                                      ▼                             ▼
+                             ┌─────────────────┐            ┌────────────────┐
+                             │  Scheduler &    │            │  Headless Bots │
+                             │  Anti‑Detection │            │  (Playwright,  │
+                             │  Engine         │            │   MobileCore)  │
+                             └────────┬────────┘            └────────┬───────┘
+                                      │                             │
+                                      ▼                             ▼
+                                Social Networks (X, Reddit, TikTok, …)
