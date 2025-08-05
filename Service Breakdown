@@ -1,0 +1,15 @@
+api-gateway — Python · FastAPI & EnvoyAuth, routing, throttling, OpenAPI documentation.
+
+auth-svc — Node.js · NestJSJWT authentication, OAuth flows, account linking.
+
+orchestrator — Python · CeleryTask orchestration, retries, SLA monitoring.
+
+llm-brain — Python · vLLM & LangChainPrompt templates, fine‑tuned subculture models, embeddings.
+
+scheduler — Rust · TokioHigh‑frequency timetable generation; anti‑ban heuristics.
+
+bot-runner — TypeScript · PlaywrightBrowser automation and captcha solving.
+
+metrics-svc — Go · FiberMetrics ingestion and Prometheus export.
+
+video-engine — Python · FFmpeg & Stable VideoTTS synthesis and clip rendering.
