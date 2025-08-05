@@ -1,0 +1,7 @@
+PostgreSQL — Core relational data (users, agents, billing).Multi‑AZ deployment with Patroni.
+
+Redis — Task queues, short‑lived state, anti‑detection cache.3‑node Redis Cluster.
+
+ClickHouse — Time‑series engagement events (CTR, impressions).Sharded; 180‑day retention.
+
+MinIO (S3) — Rendered videos and screenshots.Lifecycle rules migrate cold data to Glacier.
