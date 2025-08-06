@@ -1,0 +1,9 @@
+Zero‑trust service mesh with mTLS (SPIRE + Envoy).
+
+Secrets managed in Vault, injected at runtime via side‑car.
+
+Rate‑limits and anti‑spam heuristics enforced per customer tenant.
+
+GDPR tooling: per‑user data export & right‑to‑be‑forgotten job.
+
+Auditable action logs stored for 1 year in immutable S3 bucket.
