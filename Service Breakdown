@@ -4,9 +4,9 @@ auth-svc — Node.js · NestJSJWT authentication, OAuth flows, account linking.
 
 orchestrator — Python · CeleryTask orchestration, retries, SLA monitoring.
 
-llm-brain — Python · vLLM & LangChainPrompt templates, fine‑tuned subculture models, embeddings.
+llm-brain — TypeScript · vLLM & LangChainPrompt templates, fine‑tuned subculture models, embeddings.
 
-scheduler — Rust · TokioHigh‑frequency timetable generation; anti‑ban heuristics.
+scheduler — TypeScript · Task scheduling and anti-ban throttling are embedded directly in agent logic, using randomized delays and real-time activity limits per account
 
 bot-runner — TypeScript · PlaywrightBrowser automation and captcha solving.
 
